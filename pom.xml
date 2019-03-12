@@ -11,7 +11,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <packaging>pom</packaging>
+<!-- due to MCOMPILER-355 we are not using packaging pom here -->
+  <packaging>jar</packaging>
 
   <parent>
     <groupId>net.agilhard.align</groupId>
@@ -56,8 +57,9 @@
      </dependency>
 
     <dependency>
-      <groupId>net.agilhard.fixes</groupId>
-      <artifactId>agilhard-fixes-jsch</artifactId>
+      <groupId>net.agilhard</groupId>
+      <artifactId>jsch</artifactId>
+      <version>0.2.0</version>
     </dependency>
 
      <!-- Misc 3rd-party modules -->
